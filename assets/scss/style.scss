@@ -1,0 +1,62 @@
+/*----- Définition des variables --------- */
+
+/* Color */
+$black: #2d2d2d;
+$red: #f85c37;
+$white: #fff;
+$lightGrey: #999999;
+$regularGrey: #555;
+$darkGrey: #333;
+$iconeGrey: #bdbdbd;
+$backgroundLight: #f2f2f2;
+$background: #e0e0e0;
+
+/* Fonts */
+$titleFont: 'Raleway', serif;
+$textFont: 'Lato', sans-serif; 
+
+/*------------ Fonts-------------- */
+@font-face {
+	font-family: 'Lato';
+	src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/FontAwesome/FontAwesome.otf");
+}
+
+h1, h2, h3 {
+	font-family: $titleFont;
+}
+
+p {
+	font-family: $textFont;
+}
+
+/*------------ Navbar-------------- */
+nav {
+	background-color: $black;
+}
+
+nav li {
+	
+	font-family: $textFont;
+	font-weight: 800;
+	list-style: none;
+	font-size: 14px;
+}
+nav li a {
+	color: $lightGrey ;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: $white;
+	text-decoration: none;
+}

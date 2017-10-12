@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*----- Définition des variables --------- */
+/* Color */
+/* Fonts */
+/*------------ Fonts-------------- */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Regular.ttf"); }
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/FontAwesome/FontAwesome.otf"); }
+
+h1, h2, h3 {
+  font-family: "Raleway", serif; }
+
+p {
+  font-family: "Lato", sans-serif; }
+
+/*------------ Navbar-------------- */
+nav {
+  background-color: #2d2d2d; }
+
+nav li {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  list-style: none;
+  font-size: 14px; }
+
+nav li a {
+  color: #999999;
+  text-decoration: none; }
+
+nav li a:hover {
+  color: #fff;
+  text-decoration: none; }
