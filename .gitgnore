@@ -1,2 +1,2 @@
 # Fichiers à ne pas synchroniser
-node_modules/
+assets/node_modules/
