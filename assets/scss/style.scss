@@ -2,23 +2,29 @@
 
 /* Color */
 $black: #2d2d2d;
-$red: #f85c37;
+$red: #ff7878;
 $white: #fff;
 $lightGrey: #999999;
 $regularGrey: #555;
 $darkGrey: #333;
 $iconeGrey: #bdbdbd;
 $backgroundLight: #f2f2f2;
-$background: #e0e0e0;
+$backgroundLatest: #e0e0e0;
+$backgroundClients: #ebebeb;
 
 /* Fonts */
 $titleFont: 'Raleway', serif;
-$textFont: 'Lato', sans-serif; 
+$textFont: 'Lato-Light', sans-serif; 
 
 /*------------ Fonts-------------- */
 @font-face {
 	font-family: 'Lato';
 	src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Lato-Light';
+	src: url("../fonts/Lato/Lato-Light.ttf");
 }
 
 @font-face {
@@ -35,28 +41,237 @@ h1, h2, h3 {
 	font-family: $titleFont;
 }
 
+h3 {
+	text-align: center;
+	font-weight: 700;
+	color: $black;
+	font-size: 18px;
+}
+
+
 p {
 	font-family: $textFont;
 }
+/*------------ General-------------- */
+.img-responsive{
+	max-width: 100%;
+	
+} 
 
-/*------------ Navbar-------------- */
-nav {
-	background-color: $black;
+li {
+	list-style: none;
+}
+/*------------ Body, html-------------- */
+
+body, html {
+	margin: 0;
+	background-color: $backgroundLight;
 }
 
-nav li {
+/*------------ Navbar-------------- */
+nav, nav a {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav,footer {
+	background-color: $black;
+	color : $lightGrey ;
+	text-decoration: none;
+	font-family: $textFont;
 	
+}
+
+nav a {
+	color : $lightGrey ;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: $white;
+	text-decoration: none;
+}
+
+nav div {
+	font-size: 22px;
+	font-weight: 1500;
+}
+
+nav div i {
+	color: $red;
+}
+
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+}
+
+
+nav li {
 	font-family: $textFont;
 	font-weight: 800;
 	list-style: none;
 	font-size: 14px;
-}
-nav li a {
-	color: $lightGrey ;
-	text-decoration: none;
+	padding: 1em;
 }
 
-nav li a:hover {
+nav li.active {
+	background-color: $red;
+}
+
+.active a {
 	color: $white;
-	text-decoration: none;
+}
+
+nav li.active:hover {
+	background-color: $black;
+}
+
+
+
+/*------------ Section Titre-------------- */
+#title {
+	background: url("../img/header-bg.jpg");
+	background-size: cover;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+}
+
+#title div {
+	max-width: 40em;
+	
+}
+h1 {
+	font-size: 70px;
+	font-weight: 300;
+	text-align: center;
+}
+
+span {
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+}
+
+h1, h2 {
+	color: $white;
+}
+
+/*------------ Main-------------- */
+section {
+	display: flex;
+}
+
+/*------------ Section fonctionnalités-------------- */
+#functions {
+	display: flex;
+	margin: 3em 20em;
+	text-align: center;
+}
+
+#functions div {
+	display: flex;
+	flex-direction: row;
+}
+	
+article {
+	padding: 1em;
+}
+
+
+#functions i {
+	color: $red;
+	font-size: 30px;
+
+}
+
+article p {
+	color:$regularGrey;
+	font-size: 16px;}
+
+/*------------ First class------------- */
+
+#latest-works {
+	background-color: $backgroundLatest;
+	flex-direction: column;
+}
+
+#latest-works div{
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+	flex-wrap: wrap;
+}
+
+#latest-works h3 {
+	margin-top: 3em;
+}
+
+/*------------ First-class------------- */
+#first-class {
+	flex-direction: column;
+}
+
+#first-class div {
+	justify-content: center;
+	text-align: center;
+}
+
+/*------------ Clients------------- */
+
+#clients {
+	background-color: $backgroundClients;
+	flex-direction: column;
+}
+
+#clients div {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*------------ Story------------- */
+
+#story {
+	background-color: $red;
+	display: flex;
+	flex-direction: column;
+	color: $white;
+}
+
+#story div {
+	justify-content: center;
+	text-align: center;
+	margin: 2em 20em;
+}
+
+#story h3 {
+	color: $white;
+}
+
+/*------------ Footer------------- */
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	flex-direction: row;
+	font-size: 30px;
+	padding: 1em;
+}
+
+footer a i {
+	color: $lightGrey;
+}
+
+footer a i:hover {
+	color: $red;
 }
