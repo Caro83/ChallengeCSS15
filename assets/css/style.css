@@ -8,6 +8,10 @@
   src: url("../fonts/Lato/Lato-Regular.ttf"); }
 
 @font-face {
+  font-family: 'Lato-Light';
+  src: url("../fonts/Lato/Lato-Light.ttf"); }
+
+@font-face {
   font-family: 'Raleway';
   src: url("../fonts/Raleway/Raleway-Regular.ttf"); }
 
@@ -18,23 +22,184 @@
 h1, h2, h3 {
   font-family: "Raleway", serif; }
 
+h3 {
+  text-align: center;
+  font-weight: 700;
+  color: #2d2d2d;
+  font-size: 18px; }
+
 p {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato-Light", sans-serif; }
+
+/*------------ General-------------- */
+.img-responsive {
+  max-width: 100%; }
+
+li {
+  list-style: none; }
+
+/*------------ Body, html-------------- */
+body, html {
+  margin: 0;
+  background-color: #f2f2f2; }
 
 /*------------ Navbar-------------- */
-nav {
-  background-color: #2d2d2d; }
+nav, nav a {
+  display: flex;
+  justify-content: space-around; }
 
-nav li {
-  font-family: "Lato", sans-serif;
-  font-weight: 800;
-  list-style: none;
-  font-size: 14px; }
+nav, footer {
+  background-color: #2d2d2d;
+  color: #999999;
+  text-decoration: none;
+  font-family: "Lato-Light", sans-serif; }
 
-nav li a {
+nav a {
   color: #999999;
   text-decoration: none; }
 
-nav li a:hover {
+nav a:hover {
   color: #fff;
   text-decoration: none; }
+
+nav div {
+  font-size: 22px;
+  font-weight: 1500; }
+
+nav div i {
+  color: #ff7878; }
+
+nav ul {
+  display: flex;
+  flex-direction: row; }
+
+nav li {
+  font-family: "Lato-Light", sans-serif;
+  font-weight: 800;
+  list-style: none;
+  font-size: 14px;
+  padding: 1em; }
+
+nav li.active {
+  background-color: #ff7878; }
+
+.active a {
+  color: #fff; }
+
+nav li.active:hover {
+  background-color: #2d2d2d; }
+
+/*------------ Section Titre-------------- */
+#title {
+  background: url("../img/header-bg.jpg");
+  background-size: cover;
+  min-height: 500px;
+  display: flex;
+  justify-content: center; }
+
+#title div {
+  max-width: 40em; }
+
+h1 {
+  font-size: 70px;
+  font-weight: 300;
+  text-align: center; }
+
+span {
+  font-weight: bold; }
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center; }
+
+h1, h2 {
+  color: #fff; }
+
+/*------------ Main-------------- */
+section {
+  display: flex; }
+
+/*------------ Section fonctionnalités-------------- */
+#functions {
+  display: flex;
+  margin: 3em 20em;
+  text-align: center; }
+
+#functions div {
+  display: flex;
+  flex-direction: row; }
+
+article {
+  padding: 1em; }
+
+#functions i {
+  color: #ff7878;
+  font-size: 30px; }
+
+article p {
+  color: #555;
+  font-size: 16px; }
+
+/*------------ First class------------- */
+#latest-works {
+  background-color: #e0e0e0;
+  flex-direction: column; }
+
+#latest-works div {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  flex-wrap: wrap; }
+
+#latest-works h3 {
+  margin-top: 3em; }
+
+/*------------ First-class------------- */
+#first-class {
+  flex-direction: column; }
+
+#first-class div {
+  justify-content: center;
+  text-align: center; }
+
+/*------------ Clients------------- */
+#clients {
+  background-color: #ebebeb;
+  flex-direction: column; }
+
+#clients div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+/*------------ Story------------- */
+#story {
+  background-color: #ff7878;
+  display: flex;
+  flex-direction: column;
+  color: #fff; }
+
+#story div {
+  justify-content: center;
+  text-align: center;
+  margin: 2em 20em; }
+
+#story h3 {
+  color: #fff; }
+
+/*------------ Footer------------- */
+footer ul {
+  display: flex;
+  justify-content: center; }
+
+footer li {
+  flex-direction: row;
+  font-size: 30px;
+  padding: 1em; }
+
+footer a i {
+  color: #999999; }
+
+footer a i:hover {
+  color: #ff7878; }

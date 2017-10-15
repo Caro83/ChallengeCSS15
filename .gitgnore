@@ -1,0 +1,2 @@
+# Fichiers à ne pas synchroniser
+node_modules/
